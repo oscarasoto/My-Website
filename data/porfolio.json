@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Red Fox Force",
+    "details": "Mobile, Web Design",
+    "categories": [
+      "Web Design",
+      "Mobile"
+    ],
+    "image": "img/redfoxforce.png"
+  },
+]
+
+
+<div class="row portfolio">
+<div class="col-xs-5 project" id="project1">
+<a href="#">
+<img class="project-img" src="img/redfoxforce.png" id="img-project">
+<div class="details" id="details-project1">
+<h3>Red Fox Force</h3>
+<p><strong>Mobile, Web Design</strong></p>
+</div>
+
+</a>
+</div>
+<div class="col-xs-2 col-md-2"></div>
+
+<div class="col-xs-6 project" id="project2">
+<a href="#">
+<img class="project-img" src="img/smsgate3.png">
+<div class="details">
+<h3>SMS Gate</h3>
+<p><strong>Application Development</strong></p>
+</div>
+
+</a>
+</div>
+</div>

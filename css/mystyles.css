@@ -4,7 +4,7 @@ body, html {
 body {
 
     font-family: "Graphik", Helvetica, sans-serif;
-    background: url('../img/stone_texture580.jpg') center center repeat;
+    background: url('../img/stone_texture_optimized.jpg') center center repeat;
     background-color: rgb(139,237,219);
     background-size: cover;
     color: rgb(166,216,206);;
