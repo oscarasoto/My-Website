@@ -21,8 +21,10 @@ getGithubData();
             console.log(project.description);
             console.log(project.homepage);
 
+            // https://github.com/oscarasoto/My-Website/raw/master/img/Yupicall1.png
+
             htmlPortfolioContent += "<div class='col-xs-6 project'><a href='" + project.homepage +
-                "'><img class='project-img' " + "src='img/redfoxforce.png'>" +
+                "'><img class='project-img' " + "src='https://github.com/oscarasoto/My-Website/raw/master/img/" + project.name + "_thumbnail.png'>" +
                 "<div class='details'><h3>" + project.name.replace(/[-_]/g, " ") + "</h3><p><strong>"
                 + project.description + "</strong></p></div></a></div>"
 
