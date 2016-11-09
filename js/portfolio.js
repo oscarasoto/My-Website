@@ -54,7 +54,8 @@
         }
         setInterval(nextBackground, 4000);*/
 
-        header.css('background-image', backgrounds[2]);
+        header.css('background', backgrounds[2] + "no-repeat 50% 50% fixed");
+        header.css("background-size", "cover");
     }
 
     getGithubData();
