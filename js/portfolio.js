@@ -5,52 +5,58 @@
         }).fail(function (error) {
             console.log(error);
         }).done(function(githubData) {
-            console.log(githubData);
             buildPortfolio(githubData)
         });
     }
 
-getGithubData();
-
-
     function buildPortfolio(githubData) {
 
+        var resumeQuery = window.location.href;
+        var queryLanguage = null;
         var htmlPortfolioContent = "";
+
+        if (resumeQuery.indexOf("=") != -1) {
+            queryLanguage = resumeQuery.slice(resumeQuery.indexOf("=")+1, resumeQuery.length);
+        }
+
         githubData.forEach(function (project) {
-            console.log(project.name.replace(/[-_]/g, " "));
-            console.log(project.description);
-            console.log(project.homepage);
 
-            // https://github.com/oscarasoto/My-Website/raw/master/img/Yupicall1.png
+            if (!queryLanguage) {
+                htmlPortfolioContent += "<div class='col-xs-6 project'><a href='" + project.homepage +
+                    "'><img class='project-img' " + "src='https://github.com/oscarasoto/My-Website/raw/master/img/" + project.name + "_thumbnail.png'>" +
+                    "<div class='details'><h3>" + project.name.replace(/[-_]/g, " ") + "</h3><p><strong>"
+                    + project.description + "</strong></p></div></a></div>";
 
-            htmlPortfolioContent += "<div class='col-xs-6 project'><a href='" + project.homepage +
-                "'><img class='project-img' " + "src='https://github.com/oscarasoto/My-Website/raw/master/img/" + project.name + "_thumbnail.png'>" +
-                "<div class='details'><h3>" + project.name.replace(/[-_]/g, " ") + "</h3><p><strong>"
-                + project.description + "</strong></p></div></a></div>"
-
+            } else if (project.language == queryLanguage) {
+                htmlPortfolioContent += "<div class='col-xs-6 project'><a href='" + project.homepage +
+                    "'><img class='project-img' " + "src='https://github.com/oscarasoto/My-Website/raw/master/img/" + project.name + "_thumbnail.png'>" +
+                    "<div class='details'><h3>" + project.name.replace(/[-_]/g, " ") + "</h3><p><strong>"
+                    + project.description + "</strong></p></div></a></div>";
+            }
 
         });
 
         $("#portfolio-container").html(htmlPortfolioContent);
     }
 
-/*
+    function changeBackground() {
+        var header = $('body');
 
-    <div class=col-xs-6 project'>
-        <a href="#">
-        <img class="project-img" src="img/redfoxforce.png">
-        <div class="details">
-        <h3>Red Fox Force</h3>
-    <p><strong>Mobile, Web Design</strong></p>
-    </div>
+        var backgrounds = ["url('img/man-walking.jpg')"
+            , "url('img/home-main-slide-2.jpg')"
+            , "url('img/home-main-slide-3.jpg')"];
+        //var current = 0;
 
-    </a>
-    </div>
-*/
+        /*function nextBackground() {
+            current++;
+            current = current % backgrounds.length;
+            header.css('background-image', backgrounds[current]);
+        }
+        setInterval(nextBackground, 4000);*/
 
+        header.css('background-image', backgrounds[2]);
+    }
 
+    getGithubData();
+    changeBackground();
 })();
-
-/*
-https://raw.githubusercontent.com/oscarasoto/MyWebSite/master/img/drivesafe1.png
- */

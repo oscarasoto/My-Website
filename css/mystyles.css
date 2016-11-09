@@ -1,3 +1,15 @@
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
 body, html {
     height: 100%;
 }
@@ -58,6 +70,40 @@ strong {
             1px 1px 0 rgb(16, 165, 135);
 
 }
+
+
+/**/
+/*.responsive-circle {
+    !*font-size: 80px;*!
+    font-weight: 700;
+    margin: 0 auto 20px;
+    width: 80%;
+}
+.responsive-circle::after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 0;
+    margin-bottom: 20px;
+    padding-bottom: 100%;
+    width: 100%;
+}
+.responsive-circle div {
+    color: white;
+    float: left;
+    line-height: 1em;
+    margin-top: -0.5em;
+    padding-top: 10%;
+    text-align: center;
+    width: 100%;
+}
+
+.nyc-circle::after {
+    background-color: rgba(16, 165, 135, 0.8);
+    !*background: url("../images/nyc.jpg") repeat scroll 0 0 / cover ;*!
+}*/
+
+/**/
 .welcome {
     text-align: center;
     background-color: rgb(16, 165, 135);
@@ -120,9 +166,10 @@ strong {
 }
 
 .welcome span.arrow {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
+    position: relative;
+    /*bottom: 80%;*/
+    left: 50.2%;
+    padding-top: 2%;
     margin-left: -5.5px;
     background: url(../img/h-arrow.png) center bottom no-repeat;
     display: block;
@@ -292,6 +339,29 @@ footer a:active {
     text-shadow: none;
     background-color: rgba(0, 0, 0, 0.7);
 }
+
+tr:hover {
+    background-color: rgb(16, 165, 135);
+    color: white;
+}
+
+table a:link {
+    color: white;
+}
+
+table a:visited {
+    color: white;
+}
+
+table a:hover {
+    color: red;
+}
+
+table a:active {
+    color: white;
+}
+
+
 /* End of Resume CSS */
 
 /* Media Queries */
