@@ -54,11 +54,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-6" id="address">
+
                     <address>
-                        <p><a class="media" href="#"><i class="fa fa-map-marker fonta"></i> : 110 E Houston Street, San Antonio Texas</a></p>
+                        <p><a data-toggle="modal" data-target="#mapModal" class="media"><i class="fa fa-map-marker fonta"></i> : 110 E Houston Street, San Antonio Texas</a></p>
                         <p><a class="media" href="mailto:oscarasotoa@gmail.com"><i class="fa fa-envelope fonta"></i> : oscarasotoa@gmail.com</a></p>
                         <p><a class="media" href="https://github.com/oscarasoto"><i class="fa fa-github fonta"></i> : https://github.com/oscarasoto</a></p>
                     </address>
+
+                    <!-- Map Modal -->
+                    <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Map</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="map-canvas"></div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End Map Modal -->
+
                 </div>
                 <div class="col-xs-6">
                     <div class="nav navbar-nav navbar-right">
@@ -74,8 +95,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 media">
-                    <p>&copy; Copyright 2016 - <a href="index.html">Oscar Soto</a></p>
+                <div class="col-xs-12" id="copyright">
+                    <p>&copy; Copyright 2016 - <a href="index.html" class="media">Oscar Soto</a></p>
                 </div>
             </div>
         </div>
@@ -87,6 +108,8 @@
 <script src="js/jquery-3.1.1.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<!-- Load the Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBogAsq8FTzEWdwb2El_m89nclq93Y2t1k"></script>
 <script src="js/portfolio.js"></script>
 </body>
 </html>
