@@ -153,28 +153,84 @@ strong {
 
 footer {
     background: rgba(0, 0, 0, 0.5);
-    color: rgb(166,216,206);
+    color: black;
     text-align: center;
     padding: 10px;
     margin-top: 10px;
     font-size: .9em;
     clear: both;
 }
-
-footer a:link {
-    color: rgb(166,216,206);
-}
-
-footer a:visited {
+#copyright {
     color: white;
 }
-
-footer a:hover {
-    color: red;
+a.btn-default {
+    height: 44px;
+    border-radius: 0;
+    border: 0;
+    width: 180px;
+    text-align: left;
+    margin: 0 5px 10px 0;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+    transition: all .35s;
+    line-height: 47px;
+    overflow: hidden;
+    color: black;
+}
+a.btn-default i {
+    display: block;
+    float: left;
+    left: 12px; top: 10px;
+    font-size: 24px;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+}
+.btn-text {
+    opacity: 0;
 }
 
-footer a:active {
-    color: white;
+.btn-text:hover {
+    opacity: 1;
+}
+a.btn-default span {
+    position: relative;
+    z-index: 1;
+    padding-left: 30px;
+}
+a.btn-default:after {
+    content: '';
+    display: block;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all .35s;
+}
+a.twitter-btn:after {
+    background-color: #55ACEE;
+
+}
+a.github-btn:after {
+    background-color: #171515;
+
+}
+a.linkedin-btn:after {
+    background-color: #0077B5;
+}
+a.google-plus-btn:after {
+    background-color: darkred;
+}
+a.btn-default:hover, a.btn-default:focus {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+
+}
+a.btn-default:hover:after {
+    width: 100%;
 }
 
 #address {
@@ -183,19 +239,29 @@ footer a:active {
 .fonta {
     font-size: 1.5em;
 }
-.media a:link {
-    color: rgb(166,216,206);
+.media:link {
+    color: white;
 }
 
-.media a:visited {.
+.media:visited {
     color: white;
 }
-.media a:hover {
-    color: red;
+.media:hover {
+    color: rgb(166,216,206);
     text-decoration: none;
 }
-.media a:active {
+.media:active {
     color: white;
+}
+address a {
+    color: white;
+}
+
+#mapModal h4 {
+    color: black;
+}
+#map-canvas {
+    height: 400px;
 }
 
 /* Portfolio CSS */
