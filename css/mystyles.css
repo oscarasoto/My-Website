@@ -419,6 +419,13 @@ table a:active {
     .portfolio {
         margin: 0 2%;
     }
+    .footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        /* Set the fixed height of the footer here */
+        height: 135px;
+    }
 }
 @media (max-width: 768px) {
     .portfolio-container {
@@ -435,6 +442,13 @@ table a:active {
     }
     #project2 {
         margin: 0;
+    }
+    .footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        /* Set the fixed height of the footer here */
+        height: 145px;
     }
 }
 @media (max-width: 670px) {
@@ -454,10 +468,38 @@ table a:active {
         font-size: .7em;
     }
     .fonta {
-        font-size: 1.3em;
+        font-size: 1em;
     }
     .resume-content {
         margin: 50px auto;
+    }
+    a.btn-default i {
+        font-size: 1em;
+    }
+    a.btn-default {
+        width: 50px;
+        height: 40px;
+    }
+    a.twitter-btn:after {
+        opacity: 0;
+
+    }
+    a.github-btn:after {
+        opacity: 0;
+
+    }
+    a.linkedin-btn:after {
+        opacity: 0;
+    }
+    a.google-plus-btn:after {
+        opacity: 0;
+    }
+    .footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        /* Set the fixed height of the footer here */
+        height: 100px;
     }
 
 }
@@ -494,12 +536,55 @@ table a:active {
     .fonta {
         font-size: 1.2em;
     }
+    .footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        /* Set the fixed height of the footer here */
+        height: 100px;
+    }
+    a.twitter-btn:after {
+        opacity: 0;
+
+    }
+    a.github-btn:after {
+        opacity: 0;
+
+    }
+    a.linkedin-btn:after {
+        opacity: 0;
+    }
+    a.google-plus-btn:after {
+        opacity: 0;
+    }
 
 }
 
 @media (max-width: 521px) {
     #main-section {
         margin-left: 10%;
+    }
+
+    a.btn-default {
+        width: 30px;
+        height: 30px;
+    }
+    a.btn-default i {
+        font-size: .8em;
+    }
+    a.twitter-btn:after {
+        opacity: 0;
+
+    }
+    a.github-btn:after {
+        opacity: 0;
+
+    }
+    a.linkedin-btn:after {
+        opacity: 0;
+    }
+    a.google-plus-btn:after {
+        opacity: 0;
     }
     .footer {
         position: relative;
@@ -542,6 +627,27 @@ table a:active {
         /* Set the fixed height of the footer here */
         height: 100px;
     }
+    a.btn-default {
+        width: 30px;
+        height: 30px;
+    }
+    a.btn-default i {
+        font-size: .8em;
+    }
+    a.twitter-btn:after {
+        opacity: 0;
+
+    }
+    a.github-btn:after {
+        opacity: 0;
+
+    }
+    a.linkedin-btn:after {
+        opacity: 0;
+    }
+    a.google-plus-btn:after {
+        opacity: 0;
+    }
 }
 
 @media (max-width: 370px) {
@@ -579,6 +685,27 @@ table a:active {
         /* Set the fixed height of the footer here */
         height: 100px;
     }
+    a.btn-default {
+        width: 30px;
+        height: 30px;
+    }
+    a.btn-default i {
+        font-size: .8em;
+    }
+    a.twitter-btn:after {
+        opacity: 0;
+
+    }
+    a.github-btn:after {
+        opacity: 0;
+
+    }
+    a.linkedin-btn:after {
+        opacity: 0;
+    }
+    a.google-plus-btn:after {
+        opacity: 0;
+    }
 }
 @media (max-width: 320px) {
     .navbar-brand {
@@ -597,5 +724,26 @@ table a:active {
          /* Set the fixed height of the footer here */
          height: 100px;
      }
+    a.btn-default {
+        width: 30px;
+        height: 30px;
+    }
+    a.btn-default i {
+        font-size: .8em;
+    }
+    a.twitter-btn:after {
+        opacity: 0;
+
+    }
+    a.github-btn:after {
+        opacity: 0;
+
+    }
+    a.linkedin-btn:after {
+        opacity: 0;
+    }
+    a.google-plus-btn:after {
+        opacity: 0;
+    }
 }
 /* End of Media Queries */
